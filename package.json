@@ -1,0 +1,36 @@
+{
+  "name": "removecitation",
+  "displayName": "Remove Citation",
+  "description": "Removes apple books citation when copying and pasting code samples",
+  "version": "0.0.1",
+  "publisher": "ian",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:removeCitation"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.removeCitation",
+        "title": "Remove Citation"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "tsc -p ./",
+    "compile": "tsc",
+    "watch": "tsc -watch",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.5",
+    "vscode": "^1.1.37"
+  }
+}
